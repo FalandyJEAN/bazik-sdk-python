@@ -1,6 +1,12 @@
-"""bazik — a tiny async Python client for the Bazik API (MonCash payments, Haiti)."""
-from .client import BazikClient, DEFAULT_BASE_URL
+"""bazik — async Python client for the Bazik API (MonCash & NatCash, Haiti)."""
+from .client import (
+    BazikClient, DEFAULT_BASE_URL,
+    STATUS_PENDING, STATUS_SUCCESSFUL, STATUS_FAILED, STATUS_CANCELLED,
+)
 from .errors import BazikError
 
-__all__ = ["BazikClient", "BazikError", "DEFAULT_BASE_URL"]
-__version__ = "0.1.0"
+__all__ = [
+    "BazikClient", "BazikError", "DEFAULT_BASE_URL",
+    "STATUS_PENDING", "STATUS_SUCCESSFUL", "STATUS_FAILED", "STATUS_CANCELLED",
+]
+__version__ = "0.2.0"
