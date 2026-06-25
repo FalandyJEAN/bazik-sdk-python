@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bazik-sdk"
+version = "0.1.0"
+description = "Async Python SDK for the Bazik API — MonCash payments for Haiti."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Falandy Jean" }]
+keywords = ["bazik", "moncash", "haiti", "payments", "natcash"]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/FalandyJEAN/bazik-sdk-python"
+Issues = "https://github.com/FalandyJEAN/bazik-sdk-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bazik"]
